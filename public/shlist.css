@@ -1,0 +1,61 @@
+.shlist{
+    
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.151);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.13);
+    border: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.shlist__form{
+    border-top: 3px solid rgba(0, 0, 0, 0.534);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shlist__form input{
+    width: 85%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    font-size: large;
+
+}
+
+.shlist__form input:focus{
+    outline: none;
+
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+.shlist__articles{
+    padding: 1rem 0.5rem;
+}
+
+
+.shlist__form button{
+    width: 10%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.582);
+    border: 2px solid rgba(0, 0, 0, 0.164);
+    border-radius: 50%;
+    font-size: 32px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.shlist__form button:hover{
+    background-color: black;
+    border: 2px solid white;
+}
+
+.shlist__title{
+    color: rgba(0, 0, 0, 0.76);
+    padding-bottom: 1rem;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.534);
+    margin-bottom: 1rem;
+}
