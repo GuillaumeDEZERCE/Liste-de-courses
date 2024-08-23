@@ -39,6 +39,9 @@ class User
     #[ORM\OneToMany(targetEntity: UserShoppingList::class, mappedBy: 'user', orphanRemoval: true)]
     private Collection $userShoppingLists;
 
+    #[ORM\Column]
+    private array $roles = [];
+
     public function __construct()
     {
         $this->userShoppingLists = new ArrayCollection();
@@ -154,6 +157,18 @@ class User
                 $userShoppingList->setUser(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getRoles(): array
+    {
+        return $this->roles;
+    }
+
+    public function setRoles(array $roles): static
+    {
+        $this->roles = $roles;
 
         return $this;
     }
